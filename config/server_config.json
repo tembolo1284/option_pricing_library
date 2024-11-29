@@ -1,0 +1,6 @@
+{
+  "server_address": "localhost",
+  "server_port": 50051,
+  "log_level": "INFO"
+}
+
