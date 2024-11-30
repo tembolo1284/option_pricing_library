@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <string>
+#include <spdlog/spdlog.h>
 
 class BinomialTree {
 public:
@@ -19,9 +20,11 @@ private:
     double timeToMaturity;
     int numSteps;
     bool americanExercise;
+    double probUp;
 
     std::vector<std::vector<double>> buildTree() const;
     double backwardInduction(const std::vector<std::vector<double>>& tree) const;
+    void calculateProbUp();
 };
 
 #endif // BINOMIAL_TREE_HPP

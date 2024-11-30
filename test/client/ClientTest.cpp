@@ -1,5 +1,5 @@
 // test/client/ClientTest.cpp
-#include "client/Client.hpp"
+#include "Client.hpp"
 #include <gtest/gtest.h>
 
 TEST(ClientTest, SendRequest) {

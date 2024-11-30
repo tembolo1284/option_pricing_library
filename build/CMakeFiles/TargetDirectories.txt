@@ -1,5 +1,0 @@
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/CMakeFiles/PricingServer.dir
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/CMakeFiles/PricingTests.dir
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/CMakeFiles/test.dir
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/CMakeFiles/edit_cache.dir
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/CMakeFiles/rebuild_cache.dir

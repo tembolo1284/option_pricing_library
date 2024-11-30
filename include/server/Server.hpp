@@ -4,6 +4,7 @@
 
 #include <string>
 #include <memory>
+#include <spdlog/spdlog.h>
 
 class Server {
 public:
@@ -12,12 +13,15 @@ public:
     void stop();
     std::string getStatus() const;
 
+    void handleRequest(const std::string& request);
 private:
     std::string serverAddress;
     int serverPort;
     bool isRunning;
 
-    void handleRequest(const std::string& request);
+    void initializeServer();
+    void validateServerConfig() const;
+
 };
 
 #endif // SERVER_HPP
