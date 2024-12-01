@@ -5,9 +5,8 @@
 set -e
 
 # Run tests
-mkdir -p build
+cmake -B build -G Ninja
+cmake --build build
 cd build
-cmake ..
-make
-ctest --output-on-failure
+ctest --output-on-failure -V
 

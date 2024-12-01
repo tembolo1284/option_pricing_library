@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
+
 # Project name and version
 project(PricingLibrary VERSION 1.0)
 
@@ -12,6 +13,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 # Find required packages
 find_package(Threads REQUIRED)
+find_package(GTest REQUIRED)
 
 # Add spdlog (using FetchContent)
 include(FetchContent)
@@ -22,38 +24,85 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(spdlog)
 
-# Add include directories
-include_directories(
-    ${CMAKE_SOURCE_DIR}/include
-    ${CMAKE_SOURCE_DIR}/client/include
+# Define source files explicitly
+set(MODEL_SOURCES
+    src/models/BermudanOption.cpp
+    src/models/BinomialTree.cpp
+    src/models/BlackScholes.cpp
+    src/models/FiniteDifference.cpp
+    src/models/LeastSquaresMonteCarlo.cpp
+    src/models/MonteCarlo.cpp
 )
 
-# Gather source files (excluding main.cpp)
-file(GLOB_RECURSE LIB_SOURCES 
-    "src/models/*.cpp"
-    "src/utils/*.cpp"
-    "src/server/*.cpp"
-    "client/src/*.cpp"
+set(UTILS_SOURCES
+    src/utils/Logger.cpp
+    src/utils/MathUtils.cpp
 )
 
-# Create a static library with all the source files
-add_library(PricingLib STATIC ${LIB_SOURCES})
-target_link_libraries(PricingLib PRIVATE spdlog::spdlog)
+set(SERVER_SOURCES
+    src/server/Server.cpp
+)
+
+set(CLIENT_SOURCES
+    client/src/Client.cpp
+)
+
+# Create the main library
+add_library(PricingLib STATIC
+    ${MODEL_SOURCES}
+    ${UTILS_SOURCES}
+    ${SERVER_SOURCES}
+    ${CLIENT_SOURCES}
+)
+
+# Set include directories for the library
+target_include_directories(PricingLib
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/client/include
+    PRIVATE
+        ${spdlog_SOURCE_DIR}/include
+)
+
+# Link the library with spdlog
+target_link_libraries(PricingLib
+    PUBLIC
+        spdlog::spdlog
+)
 
 # Add the main executable
 add_executable(PricingServer src/main.cpp)
-target_link_libraries(PricingServer PRIVATE PricingLib spdlog::spdlog)
+target_link_libraries(PricingServer
+    PRIVATE
+        PricingLib
+)
+
+# Add the server executable
+add_executable(ServerExecutable src/server/ServerMain.cpp)
+target_link_libraries(ServerExecutable
+    PRIVATE
+        PricingLib
+)
 
 # Add test executable
 file(GLOB_RECURSE TEST_SOURCES "test/*.cpp")
 add_executable(PricingTests ${TEST_SOURCES})
-target_link_libraries(PricingTests 
-    PRIVATE 
-    PricingLib
-    gtest 
-    gtest_main 
-    Threads::Threads
-    spdlog::spdlog
+
+# Set include directories for tests
+target_include_directories(PricingTests
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/client/include
+        ${GTEST_INCLUDE_DIRS}
+)
+
+# Link test executable
+target_link_libraries(PricingTests
+    PRIVATE
+        PricingLib
+        GTest::GTest
+        GTest::Main
+        Threads::Threads
 )
 
 # Add testing
@@ -64,9 +113,11 @@ add_test(NAME AllTests COMMAND PricingTests)
 if(MSVC)
     target_compile_options(PricingLib PRIVATE /W4)
     target_compile_options(PricingServer PRIVATE /W4)
+    target_compile_options(ServerExecutable PRIVATE /W4)
     target_compile_options(PricingTests PRIVATE /W4)
 else()
     target_compile_options(PricingLib PRIVATE -Wall -Wextra -Wpedantic)
     target_compile_options(PricingServer PRIVATE -Wall -Wextra -Wpedantic)
+    target_compile_options(ServerExecutable PRIVATE -Wall -Wextra -Wpedantic)
     target_compile_options(PricingTests PRIVATE -Wall -Wextra -Wpedantic)
 endif()
