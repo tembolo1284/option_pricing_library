@@ -1,10 +1,10 @@
-Start testing: Dec 01 18:38 EST
+Start testing: Dec 01 20:02 EST
 ----------------------------------------------------------
 1/1 Testing: AllTests
 1/1 Test: AllTests
-Command: "/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/bin/PricingTests"
-Directory: /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build
-"AllTests" start time: Dec 01 18:38 EST
+Command: "/root/cpp-workspace/option_pricing_library/build/bin/PricingTests"
+Directory: /root/cpp-workspace/option_pricing_library/build
+"AllTests" start time: Dec 01 20:02 EST
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -12,14 +12,14 @@ Running main() from ./googletest/src/gtest_main.cc
 [----------] Global test environment set-up.
 [----------] 2 tests from ClientTest
 [ RUN      ] ClientTest.SendRequest
-[2024-12-01 18:38:35.030] [error] Invalid address: localhost
-[2024-12-01 18:38:35.030] [error] Error sending request: Failed to connect to server
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/client/ClientTest.cpp:7: Failure
+[2024-12-01 20:02:02.584] [error] Invalid address: localhost
+[2024-12-01 20:02:02.584] [error] Error sending request: Failed to connect to server
+/root/cpp-workspace/option_pricing_library/test/client/ClientTest.cpp:7: Failure
 Expected: client.sendRequest("Test Request") doesn't throw an exception.
   Actual: it throws std::runtime_error with description "Failed to connect to server".
 [  FAILED  ] ClientTest.SendRequest (0 ms)
 [ RUN      ] ClientTest.ReceiveResponse
-[2024-12-01 18:38:35.030] [error] Error receiving response: Not connected to server
+[2024-12-01 20:02:02.584] [error] Error receiving response: Not connected to server
 unknown file: Failure
 C++ exception with description "Not connected to server" thrown in the test body.
 [  FAILED  ] ClientTest.ReceiveResponse (0 ms)
@@ -27,18 +27,18 @@ C++ exception with description "Not connected to server" thrown in the test body
 
 [----------] 3 tests from BinomialTreeTest
 [ RUN      ] BinomialTreeTest.CalculatePriceEuropean
-[2024-12-01 18:38:35.030] [info] Option price calculated: 7.036742684411963
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/BinomialTreeTest.cpp:8: Failure
-The difference between price and 10.35 is 3.3132573155880367, which exceeds 0.01, where
-price evaluates to 7.0367426844119629,
-10.35 evaluates to 10.35, and
+[2024-12-01 20:02:02.584] [info] Option price calculated: 10.410691540732644
+/root/cpp-workspace/option_pricing_library/test/models/BinomialTreeTest.cpp:8: Failure
+The difference between price and 10.45 is 0.039308459267354934, which exceeds 0.01, where
+price evaluates to 10.410691540732644,
+10.45 evaluates to 10.449999999999999, and
 0.01 evaluates to 0.01.
 [  FAILED  ] BinomialTreeTest.CalculatePriceEuropean (0 ms)
 [ RUN      ] BinomialTreeTest.CalculatePriceAmerican
-[2024-12-01 18:38:35.031] [info] Option price calculated: 7.230468646862998
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/BinomialTreeTest.cpp:14: Failure
-The difference between price and 10.75 is 3.519531353137002, which exceeds 0.01, where
-price evaluates to 7.230468646862998,
+[2024-12-01 20:02:02.584] [info] Option price calculated: 10.410691540732644
+/root/cpp-workspace/option_pricing_library/test/models/BinomialTreeTest.cpp:14: Failure
+The difference between price and 10.75 is 0.33930845926735564, which exceeds 0.01, where
+price evaluates to 10.410691540732644,
 10.75 evaluates to 10.75, and
 0.01 evaluates to 0.01.
 [  FAILED  ] BinomialTreeTest.CalculatePriceAmerican (0 ms)
@@ -55,15 +55,15 @@ price evaluates to 7.230468646862998,
 
 [----------] 2 tests from FiniteDifferenceTest
 [ RUN      ] FiniteDifferenceTest.CalculatePriceExplicit
-[2024-12-01 18:38:35.031] [info] Option price calculated: 0
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/FiniteDifferenceTest.cpp:8: Failure
+[2024-12-01 20:02:02.584] [info] Option price calculated: 0
+/root/cpp-workspace/option_pricing_library/test/models/FiniteDifferenceTest.cpp:8: Failure
 The difference between price and 10.4 is 10.4, which exceeds 0.1, where
 price evaluates to 0,
 10.4 evaluates to 10.4, and
 0.1 evaluates to 0.10000000000000001.
 [  FAILED  ] FiniteDifferenceTest.CalculatePriceExplicit (0 ms)
 [ RUN      ] FiniteDifferenceTest.GetModelName
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/FiniteDifferenceTest.cpp:13: Failure
+/root/cpp-workspace/option_pricing_library/test/models/FiniteDifferenceTest.cpp:13: Failure
 Expected equality of these values:
   model.getModelName()
     Which is: "Finite Difference"
@@ -73,55 +73,55 @@ Expected equality of these values:
 
 [----------] 2 tests from LeastSquaresMonteCarloTest
 [ RUN      ] LeastSquaresMonteCarloTest.CalculatePrice
-[2024-12-01 18:38:35.036] [info] Final option value calculated: 5.827196236041165
-[2024-12-01 18:38:35.036] [info] Option price calculated: 5.827196236041165
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/LeastSquaresMonteCarloTest.cpp:8: Failure
-The difference between price and 9.8 is 3.9728037639588356, which exceeds 0.5, where
-price evaluates to 5.8271962360411651,
+[2024-12-01 20:02:02.587] [info] Final option value calculated: 5.881925748727071
+[2024-12-01 20:02:02.587] [info] Option price calculated: 5.881925748727071
+/root/cpp-workspace/option_pricing_library/test/models/LeastSquaresMonteCarloTest.cpp:8: Failure
+The difference between price and 9.8 is 3.9180742512729294, which exceeds 0.5, where
+price evaluates to 5.8819257487270713,
 9.8 evaluates to 9.8000000000000007, and
 0.5 evaluates to 0.5.
-[  FAILED  ] LeastSquaresMonteCarloTest.CalculatePrice (4 ms)
+[  FAILED  ] LeastSquaresMonteCarloTest.CalculatePrice (2 ms)
 [ RUN      ] LeastSquaresMonteCarloTest.GetModelName
 [       OK ] LeastSquaresMonteCarloTest.GetModelName (0 ms)
-[----------] 2 tests from LeastSquaresMonteCarloTest (5 ms total)
+[----------] 2 tests from LeastSquaresMonteCarloTest (2 ms total)
 
 [----------] 2 tests from MonteCarloTest
 [ RUN      ] MonteCarloTest.CalculateAsianPrice
-/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/MonteCarloTest.cpp:8: Failure
+/root/cpp-workspace/option_pricing_library/test/models/MonteCarloTest.cpp:8: Failure
 The difference between price and 9.45 is 9.4499999999999993, which exceeds 0.5, where
 price evaluates to 0,
 9.45 evaluates to 9.4499999999999993, and
 0.5 evaluates to 0.5.
-[  FAILED  ] MonteCarloTest.CalculateAsianPrice (21 ms)
+[  FAILED  ] MonteCarloTest.CalculateAsianPrice (11 ms)
 [ RUN      ] MonteCarloTest.GetModelName
 [       OK ] MonteCarloTest.GetModelName (0 ms)
-[----------] 2 tests from MonteCarloTest (21 ms total)
+[----------] 2 tests from MonteCarloTest (11 ms total)
 
 [----------] 4 tests from ServerTest
 [ RUN      ] ServerTest.Constructor_ValidParameters
-[2024-12-01 18:38:35.057] [debug] Server initializing with address: localhost and port: 8080
-[2024-12-01 18:38:35.057] [debug] Validating server configuration
+[2024-12-01 20:02:02.599] [debug] Server initializing with address: localhost and port: 8080
+[2024-12-01 20:02:02.599] [debug] Validating server configuration
 [       OK ] ServerTest.Constructor_ValidParameters (0 ms)
 [ RUN      ] ServerTest.StartStop_Sequence
-[2024-12-01 18:38:35.057] [debug] Server initializing with address: localhost and port: 8080
-[2024-12-01 18:38:35.057] [debug] Validating server configuration
-[2024-12-01 18:38:35.057] [debug] Initializing server components
-[2024-12-01 18:38:35.057] [info] Server successfully started at localhost:8080
-[2024-12-01 18:38:35.057] [debug] Status request for server at localhost:8080
-[2024-12-01 18:38:35.057] [info] Server stopped at localhost:8080
-[2024-12-01 18:38:35.057] [debug] Status request for server at localhost:8080
+[2024-12-01 20:02:02.599] [debug] Server initializing with address: localhost and port: 8080
+[2024-12-01 20:02:02.599] [debug] Validating server configuration
+[2024-12-01 20:02:02.599] [debug] Initializing server components
+[2024-12-01 20:02:02.599] [info] Server successfully started at localhost:8080
+[2024-12-01 20:02:02.599] [debug] Status request for server at localhost:8080
+[2024-12-01 20:02:02.599] [info] Server stopped at localhost:8080
+[2024-12-01 20:02:02.599] [debug] Status request for server at localhost:8080
 [       OK ] ServerTest.StartStop_Sequence (0 ms)
 [ RUN      ] ServerTest.HandleRequest_ServerRunning
-[2024-12-01 18:38:35.057] [debug] Server initializing with address: localhost and port: 8080
-[2024-12-01 18:38:35.057] [debug] Validating server configuration
-[2024-12-01 18:38:35.057] [debug] Initializing server components
-[2024-12-01 18:38:35.057] [info] Server successfully started at localhost:8080
-[2024-12-01 18:38:35.057] [info] Handling request: Price Option
+[2024-12-01 20:02:02.599] [debug] Server initializing with address: localhost and port: 8080
+[2024-12-01 20:02:02.599] [debug] Validating server configuration
+[2024-12-01 20:02:02.599] [debug] Initializing server components
+[2024-12-01 20:02:02.599] [info] Server successfully started at localhost:8080
+[2024-12-01 20:02:02.599] [info] Handling request: Price Option
 [       OK ] ServerTest.HandleRequest_ServerRunning (0 ms)
 [ RUN      ] ServerTest.HandleRequest_ServerStopped
-[2024-12-01 18:38:35.057] [debug] Server initializing with address: localhost and port: 8080
-[2024-12-01 18:38:35.057] [debug] Validating server configuration
-[2024-12-01 18:38:35.057] [error] Attempt to handle request while server is not running
+[2024-12-01 20:02:02.599] [debug] Server initializing with address: localhost and port: 8080
+[2024-12-01 20:02:02.599] [debug] Validating server configuration
+[2024-12-01 20:02:02.599] [error] Attempt to handle request while server is not running
 [       OK ] ServerTest.HandleRequest_ServerStopped (0 ms)
 [----------] 4 tests from ServerTest (0 ms total)
 
@@ -135,7 +135,7 @@ price evaluates to 0,
 [----------] 3 tests from MathUtilsTest (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 20 tests from 8 test suites ran. (27 ms total)
+[==========] 20 tests from 8 test suites ran. (14 ms total)
 [  PASSED  ] 12 tests.
 [  FAILED  ] 8 tests, listed below:
 [  FAILED  ] ClientTest.SendRequest
@@ -149,11 +149,11 @@ price evaluates to 0,
 
  8 FAILED TESTS
 <end of output>
-Test time =   0.03 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Failed.
-"AllTests" end time: Dec 01 18:38 EST
+"AllTests" end time: Dec 01 20:02 EST
 "AllTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 01 18:38 EST
+End testing: Dec 01 20:02 EST

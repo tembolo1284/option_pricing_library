@@ -1,4 +1,4 @@
-# Install script for directory: /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src
+# Install script for directory: /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

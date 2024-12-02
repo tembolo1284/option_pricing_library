@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/
+cmake_ninja_workdir = /root/cpp-workspace/option_pricing_library/build/
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target PricingLib
 
@@ -49,101 +49,101 @@ cmake_ninja_workdir = /home/tembolo381/Desktop/cpp-workspace/option_pricing_libr
 
 build cmake_object_order_depends_target_PricingLib: phony || cmake_object_order_depends_target_spdlog
 
-build CMakeFiles/PricingLib.dir/src/models/BermudanOption.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/models/BermudanOption.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/models/BermudanOption.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/models/BermudanOption.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/models/BermudanOption.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/models/BinomialTree.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/models/BinomialTree.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/models/BinomialTree.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/models/BinomialTree.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/models/BinomialTree.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/models/BlackScholes.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/models/BlackScholes.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/models/BlackScholes.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/models/BlackScholes.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/models/BlackScholes.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/models/FiniteDifference.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/models/FiniteDifference.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/models/FiniteDifference.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/models/FiniteDifference.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/models/FiniteDifference.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/models/LeastSquaresMonteCarlo.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/models/LeastSquaresMonteCarlo.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/models/LeastSquaresMonteCarlo.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/models/LeastSquaresMonteCarlo.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/models/LeastSquaresMonteCarlo.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/models/MonteCarlo.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/models/MonteCarlo.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/models/MonteCarlo.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/models/MonteCarlo.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/models/MonteCarlo.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/utils/Logger.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/utils/Logger.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/utils/Logger.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/utils/Logger.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/utils/Logger.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/utils
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/utils/MathUtils.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/utils/MathUtils.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/utils/MathUtils.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/utils/MathUtils.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/utils/MathUtils.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/utils
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/src/server/Server.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/server/Server.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/src/server/Server.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/src/server/Server.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/src/server/Server.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/src/server
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
   TARGET_PDB = libPricingLib.pdb
 
-build CMakeFiles/PricingLib.dir/client/src/Client.cpp.o: CXX_COMPILER__PricingLib_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/src/Client.cpp || cmake_object_order_depends_target_PricingLib
+build CMakeFiles/PricingLib.dir/client/src/Client.cpp.o: CXX_COMPILER__PricingLib_Release /root/cpp-workspace/option_pricing_library/client/src/Client.cpp || cmake_object_order_depends_target_PricingLib
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingLib.dir/client/src/Client.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingLib.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingLib.dir/client/src
   TARGET_COMPILE_PDB = CMakeFiles/PricingLib.dir/PricingLib.pdb
@@ -175,11 +175,11 @@ build libPricingLib.a: CXX_STATIC_LIBRARY_LINKER__PricingLib_Release CMakeFiles/
 
 build cmake_object_order_depends_target_PricingServer: phony || cmake_object_order_depends_target_PricingLib cmake_object_order_depends_target_spdlog
 
-build CMakeFiles/PricingServer.dir/src/main.cpp.o: CXX_COMPILER__PricingServer_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/main.cpp || cmake_object_order_depends_target_PricingServer
+build CMakeFiles/PricingServer.dir/src/main.cpp.o: CXX_COMPILER__PricingServer_Release /root/cpp-workspace/option_pricing_library/src/main.cpp || cmake_object_order_depends_target_PricingServer
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingServer.dir/src/main.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingServer.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingServer.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/PricingServer.dir/
@@ -212,11 +212,11 @@ build bin/PricingServer: CXX_EXECUTABLE_LINKER__PricingServer_Release CMakeFiles
 
 build cmake_object_order_depends_target_ServerExecutable: phony || cmake_object_order_depends_target_PricingLib cmake_object_order_depends_target_spdlog
 
-build CMakeFiles/ServerExecutable.dir/src/server/ServerMain.cpp.o: CXX_COMPILER__ServerExecutable_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/src/server/ServerMain.cpp || cmake_object_order_depends_target_ServerExecutable
+build CMakeFiles/ServerExecutable.dir/src/server/ServerMain.cpp.o: CXX_COMPILER__ServerExecutable_Release /root/cpp-workspace/option_pricing_library/src/server/ServerMain.cpp || cmake_object_order_depends_target_ServerExecutable
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/ServerExecutable.dir/src/server/ServerMain.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/ServerExecutable.dir
   OBJECT_FILE_DIR = CMakeFiles/ServerExecutable.dir/src/server
   TARGET_COMPILE_PDB = CMakeFiles/ServerExecutable.dir/
@@ -249,81 +249,81 @@ build bin/ServerExecutable: CXX_EXECUTABLE_LINKER__ServerExecutable_Release CMak
 
 build cmake_object_order_depends_target_PricingTests: phony || cmake_object_order_depends_target_PricingLib cmake_object_order_depends_target_spdlog
 
-build CMakeFiles/PricingTests.dir/test/client/ClientTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/client/ClientTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/client/ClientTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/client/ClientTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/client/ClientTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/client
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
   TARGET_PDB = bin/PricingTests.pdb
 
-build CMakeFiles/PricingTests.dir/test/models/BinomialTreeTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/BinomialTreeTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/models/BinomialTreeTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/models/BinomialTreeTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/models/BinomialTreeTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
   TARGET_PDB = bin/PricingTests.pdb
 
-build CMakeFiles/PricingTests.dir/test/models/BlackScholesTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/BlackScholesTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/models/BlackScholesTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/models/BlackScholesTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/models/BlackScholesTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
   TARGET_PDB = bin/PricingTests.pdb
 
-build CMakeFiles/PricingTests.dir/test/models/FiniteDifferenceTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/FiniteDifferenceTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/models/FiniteDifferenceTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/models/FiniteDifferenceTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/models/FiniteDifferenceTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
   TARGET_PDB = bin/PricingTests.pdb
 
-build CMakeFiles/PricingTests.dir/test/models/LeastSquaresMonteCarloTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/LeastSquaresMonteCarloTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/models/LeastSquaresMonteCarloTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/models/LeastSquaresMonteCarloTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/models/LeastSquaresMonteCarloTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
   TARGET_PDB = bin/PricingTests.pdb
 
-build CMakeFiles/PricingTests.dir/test/models/MonteCarloTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/models/MonteCarloTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/models/MonteCarloTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/models/MonteCarloTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/models/MonteCarloTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/models
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
   TARGET_PDB = bin/PricingTests.pdb
 
-build CMakeFiles/PricingTests.dir/test/server/ServerTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/server/ServerTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/server/ServerTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/server/ServerTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/server/ServerTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/server
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
   TARGET_PDB = bin/PricingTests.pdb
 
-build CMakeFiles/PricingTests.dir/test/utils/MathUtilsTest.cpp.o: CXX_COMPILER__PricingTests_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/test/utils/MathUtilsTest.cpp || cmake_object_order_depends_target_PricingTests
+build CMakeFiles/PricingTests.dir/test/utils/MathUtilsTest.cpp.o: CXX_COMPILER__PricingTests_Release /root/cpp-workspace/option_pricing_library/test/utils/MathUtilsTest.cpp || cmake_object_order_depends_target_PricingTests
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = CMakeFiles/PricingTests.dir/test/utils/MathUtilsTest.cpp.o.d
   FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/client/include -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/include -I/root/cpp-workspace/option_pricing_library/client/include -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = CMakeFiles/PricingTests.dir
   OBJECT_FILE_DIR = CMakeFiles/PricingTests.dir/test/utils
   TARGET_COMPILE_PDB = CMakeFiles/PricingTests.dir/
@@ -352,7 +352,7 @@ build bin/PricingTests: CXX_EXECUTABLE_LINKER__PricingTests_Release CMakeFiles/P
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /root/cpp-workspace/option_pricing_library/build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -364,7 +364,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /root/cpp-workspace/option_pricing_library/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -375,7 +375,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build && /usr/bin/cmake --regenerate-during-build -S/home/tembolo381/Desktop/cpp-workspace/option_pricing_library -B/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build
+  COMMAND = cd /root/cpp-workspace/option_pricing_library/build && /usr/bin/cmake --regenerate-during-build -S/root/cpp-workspace/option_pricing_library -B/root/cpp-workspace/option_pricing_library/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -384,7 +384,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/CMakeLists.txt
+# /root/cpp-workspace/option_pricing_library/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -396,71 +396,71 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_spdlog: phony || _deps/spdlog-build/CMakeFiles/spdlog.dir
 
-build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__spdlog_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
+build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__spdlog_Release /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=c++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir/src
   TARGET_COMPILE_PDB = _deps/spdlog-build/CMakeFiles/spdlog.dir/spdlog.pdb
   TARGET_PDB = _deps/spdlog-build/libspdlog.pdb
 
-build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
+build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_Release /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = _deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=c++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir/src
   TARGET_COMPILE_PDB = _deps/spdlog-build/CMakeFiles/spdlog.dir/spdlog.pdb
   TARGET_PDB = _deps/spdlog-build/libspdlog.pdb
 
-build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
+build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_Release /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = _deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=c++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir/src
   TARGET_COMPILE_PDB = _deps/spdlog-build/CMakeFiles/spdlog.dir/spdlog.pdb
   TARGET_PDB = _deps/spdlog-build/libspdlog.pdb
 
-build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
+build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_Release /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=c++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir/src
   TARGET_COMPILE_PDB = _deps/spdlog-build/CMakeFiles/spdlog.dir/spdlog.pdb
   TARGET_PDB = _deps/spdlog-build/libspdlog.pdb
 
-build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/async.cpp || cmake_object_order_depends_target_spdlog
+build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_Release /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/async.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = _deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=c++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir/src
   TARGET_COMPILE_PDB = _deps/spdlog-build/CMakeFiles/spdlog.dir/spdlog.pdb
   TARGET_PDB = _deps/spdlog-build/libspdlog.pdb
 
-build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/cfg.cpp || cmake_object_order_depends_target_spdlog
+build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_Release /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/cfg.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = _deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=c++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir/src
   TARGET_COMPILE_PDB = _deps/spdlog-build/CMakeFiles/spdlog.dir/spdlog.pdb
   TARGET_PDB = _deps/spdlog-build/libspdlog.pdb
 
-build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: CXX_COMPILER__spdlog_Release /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/bundled_fmtlib_format.cpp || cmake_object_order_depends_target_spdlog
+build _deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o: CXX_COMPILER__spdlog_Release /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/src/bundled_fmtlib_format.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = _deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o.d
   FLAGS = -O3 -DNDEBUG -std=c++17
-  INCLUDES = -I/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
+  INCLUDES = -I/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-src/include
   OBJECT_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = _deps/spdlog-build/CMakeFiles/spdlog.dir/src
   TARGET_COMPILE_PDB = _deps/spdlog-build/CMakeFiles/spdlog.dir/spdlog.pdb
@@ -488,7 +488,7 @@ build _deps/spdlog-build/libspdlog.a: CXX_STATIC_LIBRARY_LINKER__spdlog_Release 
 # Utility command for test
 
 build _deps/spdlog-build/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-build && /usr/bin/ctest --force-new-ctest-process
+  COMMAND = cd /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -500,7 +500,7 @@ build _deps/spdlog-build/test: phony _deps/spdlog-build/CMakeFiles/test.util
 # Utility command for edit_cache
 
 build _deps/spdlog-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -511,7 +511,7 @@ build _deps/spdlog-build/edit_cache: phony _deps/spdlog-build/CMakeFiles/edit_ca
 # Utility command for rebuild_cache
 
 build _deps/spdlog-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-build && /usr/bin/cmake --regenerate-during-build -S/home/tembolo381/Desktop/cpp-workspace/option_pricing_library -B/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build
+  COMMAND = cd /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-build && /usr/bin/cmake --regenerate-during-build -S/root/cpp-workspace/option_pricing_library -B/root/cpp-workspace/option_pricing_library/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -539,14 +539,14 @@ build spdlog: phony _deps/spdlog-build/libspdlog.a
 # =============================================================================
 
 #############################################
-# Folder: /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build
+# Folder: /root/cpp-workspace/option_pricing_library/build
 
 build all: phony libPricingLib.a bin/PricingServer bin/ServerExecutable bin/PricingTests _deps/spdlog-build/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-build
+# Folder: /root/cpp-workspace/option_pricing_library/build/_deps/spdlog-build
 
 build _deps/spdlog-build/all: phony _deps/spdlog-build/libspdlog.a
 

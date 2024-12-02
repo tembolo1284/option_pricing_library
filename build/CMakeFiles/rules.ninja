@@ -118,7 +118,7 @@ rule CXX_STATIC_LIBRARY_LINKER__spdlog_Release
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/tembolo381/Desktop/cpp-workspace/option_pricing_library -B/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build
+  command = /usr/bin/cmake --regenerate-during-build -S/root/cpp-workspace/option_pricing_library -B/root/cpp-workspace/option_pricing_library/build
   description = Re-running CMake...
   generator = 1
 

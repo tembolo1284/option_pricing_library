@@ -1,4 +1,4 @@
-# Install script for directory: /home/tembolo381/Desktop/cpp-workspace/option_pricing_library
+# Install script for directory: /root/cpp-workspace/option_pricing_library
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/_deps/spdlog-build/cmake_install.cmake")
+  include("/root/cpp-workspace/option_pricing_library/build/_deps/spdlog-build/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tembolo381/Desktop/cpp-workspace/option_pricing_library/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/cpp-workspace/option_pricing_library/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -4,22 +4,24 @@
 #include <stdexcept>
 #include <spdlog/spdlog.h>
 
-BinomialTree::BinomialTree(double spot, double strike, double rate, double volatility, 
+BinomialTree::BinomialTree(double spot, double strike, double rate, double volatility,
                           double time, int steps, bool isAmerican)
-    : spotPrice(spot), strikePrice(strike), riskFreeRate(rate), volatility(volatility), 
-      timeToMaturity(time), numSteps(steps), americanExercise(isAmerican) 
+    : spotPrice(spot), strikePrice(strike), riskFreeRate(rate), volatility(volatility),
+      timeToMaturity(time), numSteps(steps), americanExercise(isAmerican)
 {
     spdlog::debug("BinomialTree constructor called with parameters: spot={}, strike={}, "
-                 "rate={}, vol={}, time={}, steps={}, isAmerican={}", 
+                 "rate={}, vol={}, time={}, steps={}, isAmerican={}",
                  spot, strike, rate, volatility, time, steps, isAmerican);
-    calculateProbUp();  // Initialize probUp in constructor
+    calculateProbUp();
 }
 
 void BinomialTree::calculateProbUp() {
     double deltaT = timeToMaturity / numSteps;
-    double upFactor = exp(volatility * sqrt(deltaT));
+    double upFactor = std::exp(volatility * std::sqrt(deltaT));
     double downFactor = 1.0 / upFactor;
-    probUp = (exp(riskFreeRate * deltaT) - downFactor) / (upFactor - downFactor);
+    
+    // Calculate risk-neutral probability
+    probUp = (std::exp(riskFreeRate * deltaT) - downFactor) / (upFactor - downFactor);
     spdlog::debug("Calculated probUp: {}", probUp);
 }
 
@@ -37,58 +39,62 @@ std::string BinomialTree::getModelName() const {
 
 std::vector<std::vector<double>> BinomialTree::buildTree() const {
     spdlog::debug("Building binomial tree with {} steps", numSteps);
-    
-    std::vector<std::vector<double>> tree(numSteps + 1, std::vector<double>(numSteps + 1));
+    std::vector<std::vector<double>> tree(numSteps + 1);
     
     double deltaT = timeToMaturity / numSteps;
-    double upFactor = exp(volatility * sqrt(deltaT));
+    double upFactor = std::exp(volatility * std::sqrt(deltaT));
     double downFactor = 1.0 / upFactor;
     
-    spdlog::debug("Tree parameters: upFactor={}, downFactor={}, probUp={}", 
+    spdlog::debug("Tree parameters: upFactor={}, downFactor={}, probUp={}",
                  upFactor, downFactor, probUp);
-
+    
+    // Build the stock price tree
     for (int i = 0; i <= numSteps; ++i) {
+        tree[i].resize(i + 1);
         for (int j = 0; j <= i; ++j) {
-            tree[i][j] = spotPrice * pow(upFactor, j) * pow(downFactor, i - j);
+            int up_moves = j;
+            int down_moves = i - j;
+            tree[i][j] = spotPrice * std::pow(upFactor, up_moves) * std::pow(downFactor, down_moves);
         }
     }
-
+    
     spdlog::debug("Binomial tree construction completed");
     return tree;
 }
 
 double BinomialTree::backwardInduction(const std::vector<std::vector<double>>& tree) const {
     spdlog::debug("Starting backward induction");
-    
     std::vector<double> optionValues(numSteps + 1);
     
-    // Initialize terminal values
+    // Initialize terminal values (using max of call option payoff)
     for (int j = 0; j <= numSteps; ++j) {
-        optionValues[j] = std::max(0.0, americanExercise ? 
-            (tree[numSteps][j] - strikePrice) : (tree[numSteps][j] - strikePrice));
+        // Call option payoff
+        optionValues[j] = std::max(0.0, tree[numSteps][j] - strikePrice);
     }
-
-    double deltaT = timeToMaturity / numSteps;
-    double discountFactor = exp(-riskFreeRate * deltaT);
     
-    spdlog::debug("Backward induction parameters: discountFactor={}, probUp={}", 
+    double deltaT = timeToMaturity / numSteps;
+    double discountFactor = std::exp(-riskFreeRate * deltaT);
+    
+    spdlog::debug("Backward induction parameters: discountFactor={}, probUp={}",
                  discountFactor, probUp);
-
+    
     // Backward induction
     for (int i = numSteps - 1; i >= 0; --i) {
         for (int j = 0; j <= i; ++j) {
+            // Calculate continuation value
             double continuationValue = discountFactor * 
-                (optionValues[j] * probUp + optionValues[j + 1] * (1 - probUp));
+                (probUp * optionValues[j + 1] + (1 - probUp) * optionValues[j]);
             
             if (americanExercise) {
-                double exerciseValue = tree[i][j] - strikePrice;
+                // For American options, compare with immediate exercise value
+                double exerciseValue = std::max(0.0, tree[i][j] - strikePrice);
                 optionValues[j] = std::max(continuationValue, exerciseValue);
             } else {
                 optionValues[j] = continuationValue;
             }
         }
     }
-
+    
     spdlog::debug("Backward induction completed");
     return optionValues[0];
 }
